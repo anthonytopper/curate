@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "PostRequest.h"
+#import "CJSONDeserializer.h"
 
 @interface ViewController ()
 
@@ -17,6 +19,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    PostRequest *request = [[PostRequest alloc] init];
+    [request postRequestToURL:CE_SERVER_URL withPostData:@"" callback:^(NSString *response,NSError *error){
+        if (error || !response) return;
+        
+        NSLog(@"Received: %@",response);
+        
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,9 +35,17 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void) postRequestToURL:(NSString*) url withPostData:(NSData*) post {
-    NS[NSURL URLWithString:url];
-    NSString *length = [NSString stringWithFormat:@"%d",[post length]];
+-(NSDictionary*) parseJSON:(NSString*) json {
+    NSError *error;
+    NSDictionary *d = [[CJSONDeserializer deserializer] deserializeAsDictionary:[json dataUsingEncoding:NSUTF8StringEncoding] error:&error];
+    
+    if (error) {
+        NSLog(@"ERROR IN parseJSON: %@",error);
+    }
+    
+    return d;
+    
 }
+
 
 @end

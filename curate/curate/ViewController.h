@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#define CE_SERVER_URL @"https://curate-anthonytopper.c9.io/"
+
 
 @interface ViewController : UIViewController
 
