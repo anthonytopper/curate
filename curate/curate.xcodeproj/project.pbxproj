@@ -114,7 +114,13 @@
 				AD4B0CE11A9A3CB400CADBDC /* RootViewController.m */,
 				AD4B0CE21A9A3CB400CADBDC /* RootViewController.xib */,
 				9FE9C4101A9A25CF00B33538 /* Images.xcassets */,
-				9FE9C44D1A9A384A00B33538 /* CJSON */,
+				9FE9C4431A9A384200B33538 /* CJSONDeserializer.h */,
+				9FE9C4441A9A384200B33538 /* CJSONDeserializer.m */,
+				9FE9C4451A9A384200B33538 /* CJSONSerializer.h */,
+				9FE9C4461A9A384200B33538 /* CJSONSerializer.m */,
+				9FE9C4471A9A384200B33538 /* JSONRepresentation.h */,
+				9FE9C4481A9A384200B33538 /* NSDictionary_JSONExtensions.h */,
+				9FE9C4491A9A384200B33538 /* NSDictionary_JSONExtensions.m */,
 				9FE9C4121A9A25CF00B33538 /* LaunchScreen.xib */,
 				9FE9C4031A9A25CF00B33538 /* Supporting Files */,
 			);
@@ -124,7 +130,6 @@
 		9FE9C4031A9A25CF00B33538 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AD4B0CDE1A9A378800CADBDC /* logo.png */,
 				9FE9C4041A9A25CF00B33538 /* Info.plist */,
 				9FE9C4051A9A25CF00B33538 /* main.m */,
 			);
@@ -236,7 +241,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD4B0CDF1A9A378800CADBDC /* logo.png in Resources */,
 				9FE9C40F1A9A25CF00B33538 /* Main.storyboard in Resources */,
 				AD4B0CE41A9A3CB400CADBDC /* RootViewController.xib in Resources */,
 				9FE9C4141A9A25CF00B33538 /* LaunchScreen.xib in Resources */,
