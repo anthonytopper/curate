@@ -17,6 +17,9 @@
 		AD4B0CDF1A9A378800CADBDC /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AD4B0CDE1A9A378800CADBDC /* logo.png */; };
 		AD4B0CE31A9A3CB400CADBDC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4B0CE11A9A3CB400CADBDC /* RootViewController.m */; };
 		AD4B0CE41A9A3CB400CADBDC /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4B0CE21A9A3CB400CADBDC /* RootViewController.xib */; };
+		AD4B0CEC1A9A46A300CADBDC /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4B0CE61A9A46A300CADBDC /* CJSONDeserializer.m */; };
+		AD4B0CED1A9A46A300CADBDC /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4B0CE81A9A46A300CADBDC /* CJSONSerializer.m */; };
+		AD4B0CEE1A9A46A300CADBDC /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4B0CEB1A9A46A300CADBDC /* NSDictionary_JSONExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,13 @@
 		AD4B0CE01A9A3CB400CADBDC /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		AD4B0CE11A9A3CB400CADBDC /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		AD4B0CE21A9A3CB400CADBDC /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		AD4B0CE51A9A46A300CADBDC /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
+		AD4B0CE61A9A46A300CADBDC /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
+		AD4B0CE71A9A46A300CADBDC /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
+		AD4B0CE81A9A46A300CADBDC /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
+		AD4B0CE91A9A46A300CADBDC /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
+		AD4B0CEA1A9A46A300CADBDC /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		AD4B0CEB1A9A46A300CADBDC /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,12 +98,17 @@
 		9FE9C4021A9A25CF00B33538 /* curate */ = {
 			isa = PBXGroup;
 			children = (
+				AD4B0CE51A9A46A300CADBDC /* CJSONDeserializer.h */,
+				AD4B0CE61A9A46A300CADBDC /* CJSONDeserializer.m */,
+				AD4B0CE71A9A46A300CADBDC /* CJSONSerializer.h */,
+				AD4B0CE81A9A46A300CADBDC /* CJSONSerializer.m */,
+				AD4B0CE91A9A46A300CADBDC /* JSONRepresentation.h */,
+				AD4B0CEA1A9A46A300CADBDC /* NSDictionary_JSONExtensions.h */,
+				AD4B0CEB1A9A46A300CADBDC /* NSDictionary_JSONExtensions.m */,
 				9FE9C4071A9A25CF00B33538 /* AppDelegate.h */,
 				9FE9C4081A9A25CF00B33538 /* AppDelegate.m */,
 				9FE9C40A1A9A25CF00B33538 /* ViewController.h */,
 				9FE9C40B1A9A25CF00B33538 /* ViewController.m */,
-				9FE9C4291A9A304200B33538 /* PostRequest.h */,
-				9FE9C42A1A9A304200B33538 /* PostRequest.m */,
 				9FE9C40D1A9A25CF00B33538 /* Main.storyboard */,
 				AD4B0CE01A9A3CB400CADBDC /* RootViewController.h */,
 				AD4B0CE11A9A3CB400CADBDC /* RootViewController.m */,
@@ -136,13 +151,6 @@
 		9FE9C44D1A9A384A00B33538 /* CJSON */ = {
 			isa = PBXGroup;
 			children = (
-				9FE9C4431A9A384200B33538 /* CJSONDeserializer.h */,
-				9FE9C4441A9A384200B33538 /* CJSONDeserializer.m */,
-				9FE9C4451A9A384200B33538 /* CJSONSerializer.h */,
-				9FE9C4461A9A384200B33538 /* CJSONSerializer.m */,
-				9FE9C4471A9A384200B33538 /* JSONRepresentation.h */,
-				9FE9C4481A9A384200B33538 /* NSDictionary_JSONExtensions.h */,
-				9FE9C4491A9A384200B33538 /* NSDictionary_JSONExtensions.m */,
 			);
 			name = CJSON;
 			sourceTree = "<group>";
@@ -253,11 +261,10 @@
 				9FE9C40C1A9A25CF00B33538 /* ViewController.m in Sources */,
 				9FE9C4091A9A25CF00B33538 /* AppDelegate.m in Sources */,
 				AD4B0CE31A9A3CB400CADBDC /* RootViewController.m in Sources */,
+				AD4B0CED1A9A46A300CADBDC /* CJSONSerializer.m in Sources */,
 				9FE9C4061A9A25CF00B33538 /* main.m in Sources */,
-				9FE9C44B1A9A384200B33538 /* CJSONSerializer.m in Sources */,
-				9FE9C42B1A9A304200B33538 /* PostRequest.m in Sources */,
-				9FE9C44A1A9A384200B33538 /* CJSONDeserializer.m in Sources */,
-				9FE9C44C1A9A384200B33538 /* NSDictionary_JSONExtensions.m in Sources */,
+				AD4B0CEC1A9A46A300CADBDC /* CJSONDeserializer.m in Sources */,
+				AD4B0CEE1A9A46A300CADBDC /* NSDictionary_JSONExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
