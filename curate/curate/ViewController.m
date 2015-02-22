@@ -24,4 +24,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void) postRequestToURL:(NSString*) url withPostData:(NSData*) post {
+    NS[NSURL URLWithString:url];
+    NSString *length = [NSString stringWithFormat:@"%d",[post length]];
+}
+
 @end
