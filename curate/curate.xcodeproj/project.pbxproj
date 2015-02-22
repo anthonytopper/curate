@@ -15,6 +15,8 @@
 		9FE9C4141A9A25CF00B33538 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9C4121A9A25CF00B33538 /* LaunchScreen.xib */; };
 		9FE9C4201A9A25CF00B33538 /* curateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9C41F1A9A25CF00B33538 /* curateTests.m */; };
 		AD4B0CDF1A9A378800CADBDC /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AD4B0CDE1A9A378800CADBDC /* logo.png */; };
+		AD4B0CE31A9A3CB400CADBDC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4B0CE11A9A3CB400CADBDC /* RootViewController.m */; };
+		AD4B0CE41A9A3CB400CADBDC /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4B0CE21A9A3CB400CADBDC /* RootViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,9 @@
 		9FE9C41E1A9A25CF00B33538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FE9C41F1A9A25CF00B33538 /* curateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = curateTests.m; sourceTree = "<group>"; };
 		AD4B0CDE1A9A378800CADBDC /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		AD4B0CE01A9A3CB400CADBDC /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		AD4B0CE11A9A3CB400CADBDC /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		AD4B0CE21A9A3CB400CADBDC /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +93,9 @@
 				9FE9C40A1A9A25CF00B33538 /* ViewController.h */,
 				9FE9C40B1A9A25CF00B33538 /* ViewController.m */,
 				9FE9C40D1A9A25CF00B33538 /* Main.storyboard */,
+				AD4B0CE01A9A3CB400CADBDC /* RootViewController.h */,
+				AD4B0CE11A9A3CB400CADBDC /* RootViewController.m */,
+				AD4B0CE21A9A3CB400CADBDC /* RootViewController.xib */,
 				9FE9C4101A9A25CF00B33538 /* Images.xcassets */,
 				9FE9C4121A9A25CF00B33538 /* LaunchScreen.xib */,
 				9FE9C4031A9A25CF00B33538 /* Supporting Files */,
@@ -171,6 +179,7 @@
 				TargetAttributes = {
 					9FE9C3FF1A9A25CF00B33538 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 96NZH6CN6Q;
 					};
 					9FE9C4181A9A25CF00B33538 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -204,6 +213,7 @@
 			files = (
 				AD4B0CDF1A9A378800CADBDC /* logo.png in Resources */,
 				9FE9C40F1A9A25CF00B33538 /* Main.storyboard in Resources */,
+				AD4B0CE41A9A3CB400CADBDC /* RootViewController.xib in Resources */,
 				9FE9C4141A9A25CF00B33538 /* LaunchScreen.xib in Resources */,
 				9FE9C4111A9A25CF00B33538 /* Images.xcassets in Resources */,
 			);
@@ -225,6 +235,7 @@
 			files = (
 				9FE9C40C1A9A25CF00B33538 /* ViewController.m in Sources */,
 				9FE9C4091A9A25CF00B33538 /* AppDelegate.m in Sources */,
+				AD4B0CE31A9A3CB400CADBDC /* RootViewController.m in Sources */,
 				9FE9C4061A9A25CF00B33538 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +361,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = curate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -360,6 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = curate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
