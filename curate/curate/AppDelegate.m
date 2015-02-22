@@ -16,7 +16,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    RootViewController *rvc = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
+    application.keyWindow.rootViewController = rvc;
     return YES;
 }
 
