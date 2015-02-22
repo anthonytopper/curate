@@ -29,6 +29,7 @@
         return false;
     }
     
+    response = [[NSMutableData alloc] init];
     callback = cb;
     
     return true;
