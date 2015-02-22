@@ -17,7 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     RootViewController *rvc = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
-    application.keyWindow.rootViewController = rvc;
+    
+    self.window.rootViewController = rvc;
     return YES;
 }
 

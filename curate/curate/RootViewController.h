@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#define CE_SERVER_URL @"https://curate-anthonytopper.c9.io/"
 
-@interface RootViewController : UIViewController
+#import <CoreLocation/CoreLocation.h>
+
+@interface RootViewController : UIViewController <CLLocationManagerDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *priceTag;
+@property CLLocationDegrees latitude, longitude;
 
 @end
