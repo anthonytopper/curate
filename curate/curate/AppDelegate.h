@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "RootViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UITextFieldDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

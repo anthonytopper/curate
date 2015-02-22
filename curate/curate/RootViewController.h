@@ -11,7 +11,7 @@
 
 #import <CoreLocation/CoreLocation.h>
 
-@interface RootViewController : UIViewController <CLLocationManagerDelegate>
+@interface RootViewController : UIViewController <CLLocationManagerDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *priceTag;
 @property CLLocationDegrees latitude, longitude;
 

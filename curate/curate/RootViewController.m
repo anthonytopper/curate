@@ -27,9 +27,12 @@
     locManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
     locManager.distanceFilter = 500;
     [locManager startUpdatingLocation];
+    
+    self.priceTag.delegate = self;
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    NSLog(@"%@", locations);
     CLLocation *loc = [locations objectAtIndex:0];
     self.latitude = loc.coordinate.latitude;
     self.longitude = loc.coordinate.longitude;
@@ -42,18 +45,26 @@
 - (IBAction)curate:(id)sender {
     int num = self.priceTag.text.intValue;
     
-    NSDictionary *dict = [NSDictionary dictionary];
-    
-    [dict setValue:[NSNumber numberWithInt:num] forKey:@"price"];
-    [dict setValue:[NSNumber numberWithFloat:(float)self.latitude] forKey:@"latitude"];
-    [dict setValue:[NSNumber numberWithFloat:(float)self.longitude] forKey:@"longitude"];
-    [dict setValue:[NSNumber numberWithUnsignedInteger:(unsigned)time(NULL)] forKey:@"time"];
+    NSString *req = [NSString stringWithFormat:@"{ \"price\" : %i, \"latitude\": %f, \"longitude\": %f, \"time\": %u }", num, (float)self.latitude, (float)self.longitude, (unsigned)time(NULL)];
     
     PostRequest *request = [[PostRequest alloc] init];
-    [request postRequestToURL:CE_SERVER_URL withPostData:[self stringifyJSON:dict] callback:^(NSString *response,NSError *error){
+    [request postRequestToURL:CE_SERVER_URL withPostData:req callback:^(NSString *response,NSError *error){
         if (error || !response) return;
         
         NSLog(@"Received: %@",response);
+    }];
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    [UIView animateWithDuration:1.0 animations:^{
+        self.view.center = CGPointMake(self.view.center.x, self.view.center.x-130);
+    }];
+    
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    [UIView animateWithDuration:1.0 animations:^{
+        self.view.center = CGPointMake(self.view.center.x, self.view.center.x+130);
     }];
 }
 
