@@ -112,6 +112,7 @@
 		9FE9C4031A9A25CF00B33538 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AD4B0CDE1A9A378800CADBDC /* logo.png */,
 				9FE9C4041A9A25CF00B33538 /* Info.plist */,
 				9FE9C4051A9A25CF00B33538 /* main.m */,
 			);
@@ -229,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD4B0CDF1A9A378800CADBDC /* logo.png in Resources */,
 				9FE9C40F1A9A25CF00B33538 /* Main.storyboard in Resources */,
 				9FE9C4141A9A25CF00B33538 /* LaunchScreen.xib in Resources */,
 				9FE9C4111A9A25CF00B33538 /* Images.xcassets in Resources */,
@@ -448,6 +450,7 @@
 				9FE9C4251A9A25CF00B33538 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FE9C4261A9A25CF00B33538 /* Build configuration list for PBXNativeTarget "curateTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +459,7 @@
 				9FE9C4281A9A25CF00B33538 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
